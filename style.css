@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://www.shutterstock.com/image-illustration/empty-wooden-sign-isolated-on-white-172588595);
+    
+}
+
+.container {
+    background-color: black;
+    color: beige;
+}

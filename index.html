@@ -1,0 +1,129 @@
+<!-- 
+    Author:  Eddie Davis
+    Fox Specialty Wood
+    week 10 assignment
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
+  </head>
+
+<!----- SECTION 1 ----->
+
+  <body class="bg-secondary">
+    <div id="main-container" class="container pt-2 pb-5 bg-light">
+      <div>
+        <img
+          src="images/fox-card.gif"
+          class="img-fluid rounded mx-auto d-block"
+          alt="A photo of fox specialty wood business card"
+          height="150">
+          <figcaption class="figcaption text-center pt-1">Local family owned and operated saw mill in Rigby Idaho. Blaine Hodges established 2021</figcaption>
+      </div>
+      
+     <!----- NAVBAR ----->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="wood.html">Wood</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="customer.html">Wood Picture</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Customers Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <h6 class="text-center mb-5">What to say here</h6>
+
+<!----- table with add/remove ----->
+
+<div class="container">
+
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-start-date">Start Date</label>
+            <input type="date" class="form-control" id="new-start-date">
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-end-date">End Date</label>
+            <input type="date" class="form-control" id="new-end-date">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-task">Task</label>
+            <input type="text" class="form-control" id="new-task" placeholder="Task">
+          </div>
+        </div>
+      
+      </div>
+        <button id="add" class="btn btn-primary form-control">Create</button>
+      </div>
+
+  </div>
+</div>
+
+<table id="list" class="table table-dark table-striped">
+  <tr>
+    <th>Task</th>
+    <th>Date Created</th>
+    <th>Start Date</th>
+    <th>Due Date</th>
+    <th>Action</th>
+  </tr>
+</table>
+      
+
+<!----- SECTION 2 ----->
+
+
+<!----- FOOTER ----->
+<footer class="text-center mt-3">Fox Specialty Wood ©️2023</footer>
+</div>
+
+    <script src="table.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+  </body>
+</html>
+
